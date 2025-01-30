@@ -8,8 +8,8 @@ body{font-family: var(--gothicregular);}
 html{font-size: 62.5%;-webkit-text-size-adjust:none;}
 html,body{overflow-x: hidden;}
 :root {
-  --red:#1A1A1D;
-  --darkgrey: #303030;
+  --red:#004D40 ;
+  --darkgrey: #004D40;
   --gothicregular: 'GOTHIC';
   --gothicbold: 'GOTHICB';
 }

@@ -220,7 +220,7 @@ p{font-size: 18px;color: var(--darkgrey);line-height: 1.2;color: var(--darkgrey)
 .product-section .product-box:hover .font-20{color: #fff;}*/
 /*.product-section .product-box:hover .product-data .product-para{color: #fff;display: block;}*/
 .product-section .product-box .product-data{padding: 4.8rem 3.5rem;transition: ease-in-out .3s all;}
-.product-section .product-box .product-data .font-20{font-family: 'alroalrobold700';}
+.product-section .product-box .product-data .font-20{font-family: 'alroalrobold300';}
 .product-section .product-box .product-data .product-para{display: none;font-size: 12px;margin-top: 2.3rem;} 
 .product-section .product-box img{width: 30.2rem;height: 17.5rem;}
 

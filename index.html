@@ -1,6 +1,11 @@
 <!DOCTYPE html><html lang="en"><head>
-  
     <meta charset="utf-8">
+    <style>
+      html {
+    scroll-behavior: smooth;
+}
+
+    </style>
     <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
     <meta name="google-site-verification" content="FBucbGU4NSgD7fA8xUVFlvXlVEivXcyjLdj34w4Q6b0">
 
@@ -907,27 +912,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         $(document).ready(function () {
           AOS.init({ duration: 500 });
         });
-    </script>
-  <script>
-    $(document).ready(function () {
-        // AOS Initialization
-        AOS.init({
-            duration: 1000,
-            easing: "ease-in-out",
-            once: true
-        });
 
-        // Smooth Scroll for All Anchor Links
-        $("a[href^='#']").on("click", function (event) {
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+    // AOS Initialization
+    AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true
+    });
+
+    // Smooth Scroll for All Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (event) {
             event.preventDefault();
 
-            var target = this.hash;
-            $("html, body").animate({
-                scrollTop: $(target).offset().top
-            }, 800); // Scroll speed
+            const targetID = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetID);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"
+                });
+            }
         });
     });
-</script>
+});
 
+    </script>
+  
 
 </body></html>

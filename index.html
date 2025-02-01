@@ -1,11 +1,13 @@
 <!DOCTYPE html><html lang="en"><head>
-    <meta charset="utf-8">
-    <style>
-      html {
+
+  <style>
+    html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-    </style>
+  </style>
+    <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
     <meta name="google-site-verification" content="FBucbGU4NSgD7fA8xUVFlvXlVEivXcyjLdj34w4Q6b0">
 
@@ -32,7 +34,6 @@
     <link rel="stylesheet" href="css/media.css">
     
 
-    
 <!-- Google Tag Manager -->
 <script async="" src="js/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -915,29 +916,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+
         document.addEventListener("DOMContentLoaded", function () {
-    // AOS Initialization
-    AOS.init({
-        duration: 1000,
-        easing: "ease-in-out",
-        once: true
-    });
+    window.addEventListener("wheel", function(event) {
+        event.stopPropagation();
+    }, { passive: true });
 
-    // Smooth Scroll for All Anchor Links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (event) {
-            event.preventDefault();
+    window.addEventListener("touchmove", function(event) {
+        event.stopPropagation();
+    }, { passive: true });
 
-            const targetID = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetID);
-
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: "smooth"
-                });
-            }
-        });
+    window.addEventListener("scroll", function() {
+        document.body.style.overflow = "visible";
     });
 });
 

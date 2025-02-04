@@ -177,7 +177,7 @@ p{font-size: 18px;color: var(--darkgrey);line-height: 1.2;color: var(--darkgrey)
 
 /* assurance section */
 .assurance-sec .assurance-row{margin-top: 9rem;display: grid;grid-template-columns: repeat(4, 1fr);gap: 3.3rem;}
-.assurance-sec .assurance-box{background: var(--red);border-radius: 4rem;padding: 9.5rem 3.7rem;position: relative;}
+.assurance-sec .assurance-box{background: var(--red);border-radius: 4rem;position: relative;}
 .assurance-sec .assurance-textbox{display: flex;align-items: center;justify-content: center;flex-direction: column;}
 .assurance-sec .assurance-textbox p{color: #fff;font-size: 2.5rem;font-family: var(--gothicbold);line-height: 1.4;}
 .assurance-sec .assurance-textbox span{color: #fff;display: inline-block;text-align: center;margin-top: 2rem;}
@@ -242,7 +242,7 @@ p{font-size: 18px;color: var(--darkgrey);line-height: 1.2;color: var(--darkgrey)
 
 /* dream-section */
 /* .dream-section{position: relative;} */
-.dream-section{position: relative;background-image: url("../images/slider-bg.webp");background-repeat: no-repeat;background-size: cover;padding-bottom: 34%;}
+.dream-section{position: relative;background-image: url("../images/slider-bg.png");background-repeat: no-repeat;background-size: cover;padding-bottom: 34%;}
 .dream-section .slider-head{width: 64.5rem;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .dream-section .slider-head .heading02{color: #fff;margin-bottom: 2.4rem;border-bottom: 2px solid var(--red);display: inline-block;}
 .dream-section .slider-head p{color: #fff;}

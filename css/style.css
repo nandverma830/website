@@ -242,7 +242,7 @@ p{font-size: 18px;color: var(--darkgrey);line-height: 1.2;color: var(--darkgrey)
 
 /* dream-section */
 /* .dream-section{position: relative;} */
-.dream-section{position: relative;background-image: url("../images/slider-bg.png");background-repeat: no-repeat;background-size: cover;padding-bottom: 34%;}
+.dream-section{position: relative;background-image: url("../images/slider-bg.webp");background-repeat: no-repeat;background-size: cover;padding-bottom: 34%;}
 .dream-section .slider-head{width: 64.5rem;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
 .dream-section .slider-head .heading02{color: #fff;margin-bottom: 2.4rem;border-bottom: 2px solid var(--red);display: inline-block;}
 .dream-section .slider-head p{color: #fff;}

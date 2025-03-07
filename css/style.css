@@ -6,7 +6,7 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 a{text-decoration: none;}
 body{font-family: var(--gothicregular);} 
 html{font-size: 62.5%;-webkit-text-size-adjust:none;}
-html,body{overflow:scroll;}
+html,body{overflow:visible}
 :root {
   --red:#125f31 ;
   --darkgrey: #1E201E;

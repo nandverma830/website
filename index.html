@@ -4,6 +4,20 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
     <meta name="google-site-verification" content="FBucbGU4NSgD7fA8xUVFlvXlVEivXcyjLdj34w4Q6b0">
 
+    <style>
+      .hero-slider {
+          display: flex;
+          overflow: hidden;
+      }
+      
+      .hero-slider0box img,
+      .hero-slider0box video {
+          width: 100%;
+          height: auto;
+      }
+    </style>
+
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="css/aos.css" rel="stylesheet">
@@ -266,20 +280,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
 
             <div class="hero-slider">
-              <div class="hero-slider0box">
-                <!-- <img src="images/home-banner-01.webp" alt=""> -->
-                <img src="images/home-banner-01.webp"  alt="">
-              </div>
               <div class="hero-slider0box"> 
-                <img src="images/home-banner-04.webp" alt="" >
-              </div>
-              <!-- <div class="hero-slider0box">
-                <img src="images/home-banner-03.webp" alt="">
-              </div> -->
-              <div class="hero-slider0box">
-                <img src="images/home-banner-02.webp" d alt="">
-              </div>
+                <video id="sliderVideo" autoplay loop muted playsinline>
+                    <source src="images/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
+            
+              <div class="hero-slider0box">
+                  <img id="referenceImage" src="images/home-banner-01.webp" alt="">
+              </div>
+          
+              <div class="hero-slider0box">
+                  <img src="images/home-banner-02.webp" alt="">
+              </div>
+          </div>
+          
           </div>
          
         </section>
@@ -761,6 +777,30 @@ We also offer custom cutting, fast delivery, and expert advice to meet your proj
         </div>
         <!-- <a href="https://www.digitale.co.in/" target="_blank" style="color: red;text-align: center;font-size: 14px;margin-top: 10px;display: block;"> Designed & Developed By: Digitale</a> -->
       </footer>
+
+      <script>
+        window.addEventListener("load", function () {
+            let referenceImage = document.getElementById("referenceImage");
+            let sliderVideo = document.getElementById("sliderVideo");
+      
+            if (referenceImage.complete) {
+                adjustMediaSize();
+            } else {
+                referenceImage.onload = adjustMediaSize;
+            }
+      
+            function adjustMediaSize() {
+                let imgWidth = referenceImage.clientWidth;
+                let imgHeight = referenceImage.clientHeight;
+      
+                // Apply the same dimensions to all images and videos
+                document.querySelectorAll(".hero-slider0box img, .hero-slider0box video").forEach(media => {
+                    media.style.width = imgWidth + "px";
+                    media.style.height = imgHeight + "px";
+                });
+            }
+        });
+      </script>
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script>

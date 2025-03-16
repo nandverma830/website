@@ -8,7 +8,7 @@ body{font-family: var(--gothicregular);}
 html{font-size: 62.5%;-webkit-text-size-adjust:none;}
 html,body{overflow:visible}
 :root {
-  --red:#125f31 ;
+  --red:#1d492f ;
   --darkgrey: #1E201E;
   --gothicregular: 'GOTHIC';
   --gothicbold: 'GOTHICB';
@@ -187,8 +187,8 @@ p{font-size: 18px;color: var(--darkgrey);line-height: 1.2;color: var(--darkgrey)
 
 /* num-row */
 .num-row{display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 15.8rem;margin: 3.8rem 13rem 0 13rem;}
-.num-row .big-num,.num-row .big-numtxt{font-family: var(--gothicbold);color: var(--darkgrey);display: block;text-align: center;}
-.num-row .big-num{font-size: 7.5rem;line-height: 1;-webkit-text-stroke: 2px #303030;color: transparent;border-bottom: 2px solid var(--darkgrey);margin: 0 auto;padding-bottom: 1.8rem;margin-bottom: 1.8rem;width: max-content;}
+.num-row .big-num,.num-row .big-numtxt{color: var(--darkgrey);display: block;text-align: center;}
+.num-row .big-num{font-size: 7.5rem;line-height: 1;-webkit-text-stroke:1px #303030;color: transparent;border-bottom: 2px solid var(--darkgrey);margin: 0 auto;padding-bottom: 1.8rem;margin-bottom: 1.8rem;width: max-content;text-align: center;}
 .num-row .big-numtxt{font-size: 2rem;}
 .num-row  .zero-num{font-size: 13.5rem;line-height: 1;-webkit-text-stroke: 2px #303030;color: transparent;border-bottom: 2px solid var(--darkgrey);margin: 0 auto;padding-bottom: 1.8rem;margin-bottom: 1.8rem;width: max-content;}
 

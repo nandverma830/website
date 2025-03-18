@@ -225,9 +225,11 @@
   .building-section .three-box-sec{padding: 0 15%;}
   .building-section .three-box-sec .three-box-wrap .right-box p{margin-top: 0;}
 }
-
+/* 
 @media screen and (min-width:1023px){
-  html,body{overflow-x: clip;}}
+  html,body{overflow-x: unset !important;}
+
+} */
 
 @media screen and (max-width:1023px){
   
